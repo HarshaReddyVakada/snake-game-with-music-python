@@ -25,7 +25,7 @@ try:
     background_image = pygame.image.load(r"C:\Users\ASUSG\OneDrive\ドキュメント\Desktop\snakegame\ironman.jpg")
     background_image = pygame.transform.scale(background_image, (width, height))  # Scale the image to fit the screen
 except Exception as e:
-    print(rf"C:\Users\ASUSG\OneDrive\Desktop\snakegame2.py\ironman.jpg: {e}")
+    print(rf"C:\Users\ASUSG\OneDrive\ドキュメント\Desktop\snakegame\ironman.jpg")
     background_image = pygame.Surface((width, height))  # Fallback to a blank surface if the image fails to load
     background_image.fill((0, 0, 0))  # Fill with black
 
