@@ -7,14 +7,13 @@ pygame.init()
 pygame.mixer.init()  # Initialize the mixer
 
 # Load and play background music
-music_path = r"C:\Users\ASUSG\OneDrive\Desktop\snakegame2.py\Nagini_Original_Song_#NBP_Creation(128k).mp3"
+music_path = r"C:\Users\ASUSG\OneDrive\ドキュメント\Desktop\snakegame\Nagini_Original_Song_#NBP_Creation(128k).mp3"
 try:
     pygame.mixer.music.load(music_path)
     pygame.mixer.music.play(-1)  # Play the music on a loop
     print("Background music is playing...")
 except pygame.error as e:
     print(f"Error loading music file: {e}")
-
 # Set up the game window (600x600)
 width, height = 600, 600
 game_screen = pygame.display.set_mode((width, height))
@@ -23,7 +22,7 @@ pygame.display.set_caption("Harsha Snake Game Project")
 # Load the Ironman background image
 try:
     # Load the background image using raw string
-    background_image = pygame.image.load(r"C:\Users\ASUSG\OneDrive\Desktop\snakegame2.py\ironman.jpg")
+    background_image = pygame.image.load(r"C:\Users\ASUSG\OneDrive\ドキュメント\Desktop\snakegame\ironman.jpg")
     background_image = pygame.transform.scale(background_image, (width, height))  # Scale the image to fit the screen
 except Exception as e:
     print(rf"C:\Users\ASUSG\OneDrive\Desktop\snakegame2.py\ironman.jpg: {e}")
